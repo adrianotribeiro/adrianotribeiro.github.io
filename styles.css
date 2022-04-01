@@ -1,0 +1,191 @@
+* {
+  font-family: "Work Sans", sans-serif;
+}
+/*
+Icon Menu
+*/
+body {
+  background-color: rgb(225, 228, 228);
+}
+body p,
+li {
+  font-weight: bold;
+}
+body p {
+  line-height: 1.3em;
+}
+body .icon-menu {
+  display: flex;
+  padding: 1.5em;
+}
+body .icon-menu div {
+  padding: 0 0.5em;
+}
+body a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: inherit;
+  color: inherit;
+}
+body .icon-menu i {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+body .img-perfil {
+  width: 100%;
+  text-align: center;
+}
+body .logo-perfil {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+body .text-center {
+  text-align: center;
+}
+body .text-center h2 {
+  margin-bottom: 0;
+}
+body .text-center h3 {
+  margin-top: 0px;
+  margin-bottom: 2em;
+}
+hr.style-eight {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+hr.style-eight:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: rgb(225, 228, 228);
+}
+/*
+refs:
+https://css-tricks.com/examples/hrs/
+*/
+/*
+conteúdo
+*/
+body .display-flex {
+  display: flex;
+  justify-content: center;
+}
+body .descricao,
+.habilidades {
+  width: 50em;
+}
+body .descricao,
+.habilidades h2 {
+  text-align: center;
+}
+body .habilidades ul li {
+  padding: 0.5em 0;
+}
+/*
+Experiências
+*/
+body .hr-stylezed-experiencias {
+  margin-top: 3em;
+  width: 75%;
+}
+body .logo {
+  width: 100;
+}
+body .div-padding div {
+  width: 33.33%;
+}
+/*
+Outras formas de contato
+ */
+body .hr-stylezed-contatos {
+  margin-top: 3em;
+  width: 50%;
+}
+body .form-style-8 h2 {
+  color: white;
+  font-weight: 900;
+}
+.form-style-8 {
+  font-family: "Open Sans Condensed", arial, sans;
+  width: 500px;
+  padding: 30px;
+  background: #ffffff;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.form-style-8 h2 {
+  background: #4d4d4d;
+  text-transform: uppercase;
+  color: #797979;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+}
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden;
+}
+/* Estudar esses códigos
+refs
+https://www.sanwebe.com/2014/08/css-html-forms-designs
+ */
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"] {
+  color: white;
+  background-color: rgb(179, 179, 179);
+  border: 1px solid rgb(179, 179, 179);
+  display: inline-block;
+  cursor: pointer;
+  background: #4d4d4d;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+  background-color: rgb(0, 0, 0);
+}

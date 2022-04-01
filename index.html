@@ -4,61 +4,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
-    <h3>Índice</h3>
-    <ol>
-      <li><a href="#descricao">Descrição</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#blog">Blog</a></li>
-    </ol>
-    <h1>Portfólio</h1>
-    <h2>Adriano Ribeiro de Oliveira</h2>
-    <br />
-    <img
-      src="/foto_perfil.jpg"
-      alt="Foto de Adriano Ribeiro de Oliveira"
-      width="300px"
-    />
-    <br />
-    <br />
-    <h2 id="descricao">Descrição</h2>
-    <p>
-      <strong>Adriano Ribeiro de Oliveira</strong> , tenho
-      <strong>28 anos</strong>, nascido no Brasil moro em Canoas/RS.<br />
-      Sou uma pessoa um pouco comunicativa e curiosa sempre a procura de
-      aprender diversos tipos de conhecimentos.
-    </p>
-    <br />
-    <h2 id="habilidades">Habilidades:</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Arranho no violão e canto</li>
-      <li>Um poudo de modelagem 3D e escultura digital</li>
-    </ul>
-    <br />
-    <h2 id="contato">Formas de Contato:</h2>
-    <ul>
-      <li>
+    <div class="icon-menu">
+      <div>
         <a
           href="https://www.linkedin.com/in/adriano-ribeiro-96a574235/"
           target="_blank"
-          >Linkedin</a
         >
-      </li>
-      <li>
-        <a href="https://github.com/adrianotribeiro" target="_blank">Github</a>
-      </li>
-    </ul>
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://github.com/adrianotribeiro?tab=followers"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/adriano.ribeirodeolivera"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <!-- <div>
+        <a href="mailto:adrianotribeiro072@gmail.com" target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </div> -->
+      <div>
+        <a
+          href="https://api.whatsapp.com/send?phone=5551985715014"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Conteúdo - header -->
+    <div class="img-perfil">
+      <img
+        class="logo-perfil"
+        src="./perfil.jpeg"
+        alt="Foto de Adriano Ribeiro de Oliveira"
+      />
+    </div>
+    <div class="text-center">
+      <h2>Adriano Ribeiro de Oliveira</h2>
+      <h3>28 anos, Canoas-RS/BR</h3>
+    </div>
+    <hr class="style-eight" />
+    <div class="display-flex">
+      <div class="descricao">
+        <h2>Descrição</h2>
+        <p>
+          Pessoa bastante comunicativa que sempre esteve à procura de adquirir
+          diversos conhecimentos, em especial os que sempre voltam pra minha
+          vida que são arte(modelagem 3D), música e programação. Sempre disposto
+          a uma boa conversa sobre qualquer aleatoriedade que seja. Cursando
+          Desenvolvimento Web na escola Trybe.
+        </p>
+      </div>
+      <div class="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-book-atlas"></i></span>
+            HTML
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-book-atlas"></i></span>CSS
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-book-atlas"></i></span
+            >Poker sem saber jogar
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-book-atlas"></i></span
+            >Violão e voz
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-book-atlas"></i></span
+            >Modelagem 3D (Básico)
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Experiências -->
+    <hr class="style-eight hr-stylezed-experiencias" />
 
-    <br />
-    <h2 id="blog">Blog</h2>
+    <div class="text-center">
+      <h2>Projetos</h2>
+      <h3>Front-end</h3>
+      <div class="display-flex div-padding">
+        <div>
+          <a href="https://www.decisaorh.com.br/home" target="_blank">
+            <img
+              class="logo"
+              src="./decisao-logo.png"
+              alt="Logo do site Decisão RH"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://dimenor.net/" target="_blank">
+            <img
+              src="./sgi-retangular.png"
+              alt="Logo da empresa Dimenor Fichas"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://clioapp.com.br/superads/" target="_blank">
+            <img
+              src="./super-adds-logo.png"
+              alt="Logo da empresa Clio App Super Adds"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outras formas de contato -->
+    <hr class="style-eight hr-stylezed-contatos" />
+    <div class="text-center form-style-8">
+      <h2>Ou nos mande um email(BETA)</h2>
+      <form>
+        <input type="text" name="" placeholder="Nome" />
+        <input type="text" name="" placeholder="Email" />
+        <input type="text" name="" placeholder="Assunto" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Descrição"
+        ></textarea>
+        <input type="button" value="ENVIAR" />
+      </form>
+    </div>
+    <!-- <h2>Blog</h2>
     <a href="https://brushworkatelier.com/" target="_blank"
       >BrushWork Atelier</a
-    >
-    <br />
+    > -->
   </body>
 </html>
