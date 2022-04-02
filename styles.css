@@ -7,21 +7,7 @@ Icon Menu
 body {
   background-color: rgb(225, 228, 228);
 }
-body p,
-li {
-  font-weight: bold;
-}
-body p {
-  line-height: 1.3em;
-}
-body .icon-menu {
-  display: flex;
-  padding: 1.5em;
-}
-body .icon-menu div {
-  padding: 0 0.5em;
-}
-body a,
+a,
 a:hover,
 a:link,
 a:visited,
@@ -29,35 +15,81 @@ a:active {
   text-decoration: inherit;
   color: inherit;
 }
-body .icon-menu i {
+p,
+li {
+  line-height: 1.3em;
+  font-weight: bold;
+}
+.header {
+  padding-left: 4em;
+}
+/* Área dos links do perfil */
+.icon-menu {
+  display: flex;
+  padding: 1.5em;
+  justify-content: end;
+}
+.icon-menu div {
+  padding: 0 0.5em;
+}
+.icon-menu i {
   font-size: 2em;
   line-height: 0.03125em;
   vertical-align: -0.1875em;
 }
-body .img-perfil {
-  width: 100%;
+/* Área dos links do perfil */
+
+/* Área perfil: foto, nome */
+.perfil {
+  display: flex;
+}
+.img-perfil {
+  /* border: 2px solid red; */
+  width: 24%;
+  margin-right: 5em;
+}
+.text-center {
   text-align: center;
 }
-body .logo-perfil {
+.logo-perfil {
   width: 250px;
   height: 250px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto;
+  box-shadow: 0 0 10px #333;
 }
-body .text-center {
+.name-perfil {
+  /* border: 2px solid red; */
+  position: relative;
+  float: left;
   text-align: center;
 }
-body .text-center h2 {
+.name-perfil h2,
+.text-center h2 {
   margin-bottom: 0;
 }
-body .text-center h3 {
-  margin-top: 0px;
-  margin-bottom: 2em;
+.name-perfil h3,
+.text-center h3 {
+  margin-top: 0;
 }
+.description {
+  /* border: 2px solid red; */
+  width: 74%;
+}
+.habilidades li {
+  padding: 0.5em 0;
+}
+.habilidades li:nth-of-type(odd):hover {
+  font-size: larger;
+}
+/*
+refs:
+https://css-tricks.com/examples/hrs/
+*/
 hr.style-eight {
-  overflow: visible; /* For IE */
+  overflow: visible;
   padding: 0;
   border: none;
   border-top: medium double #333;
@@ -73,44 +105,23 @@ hr.style-eight:after {
   padding: 0 0.25em;
   background: rgb(225, 228, 228);
 }
-/*
-refs:
-https://css-tricks.com/examples/hrs/
-*/
-/*
-conteúdo
-*/
-body .display-flex {
-  display: flex;
-  justify-content: center;
-}
-body .descricao,
-.habilidades {
-  width: 50em;
-}
-body .descricao,
-.habilidades h2 {
-  text-align: center;
-}
-body .habilidades ul li {
-  padding: 0.5em 0;
-}
-/*
-Experiências
-*/
-body .hr-stylezed-experiencias {
+.hr-stylezed-experiencias {
   margin-top: 3em;
   width: 75%;
 }
-body .logo {
+.display-flex {
+  display: flex;
+}
+.logo {
   width: 100;
 }
-body .div-padding div {
+.div-padding {
+  padding-top: 1.5em;
+}
+.div-padding div {
   width: 33.33%;
 }
-/*
-Outras formas de contato
- */
+
 body .hr-stylezed-contatos {
   margin-top: 3em;
   width: 50%;
