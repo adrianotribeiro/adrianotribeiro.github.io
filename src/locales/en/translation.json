@@ -1,0 +1,25 @@
+{
+  "label": {
+    "contact": "Contact",
+    "projects": "View Projects",
+    "contact-me": "Contact Me"
+  },
+  "aria-labels": {
+    "switcher-description": "Website language selector",
+    "site-header": "Site header",
+    "logo-alt": "Adriano Ribeiro Logo",
+    "main-navigation": "Main navigation"
+  },
+  "header": {
+    "menu": {
+      "about": "About",
+      "technologies": "Technologies",
+      "projects": "Projects"
+    }
+  },
+  "hero": {
+    "title": "Front-End Developer · React",
+    "subtitle": "Studying, building, and refactoring.",
+    "content": "Transforming ideas into real-world applications, creating functional interfaces and meaningful code."
+  }
+}

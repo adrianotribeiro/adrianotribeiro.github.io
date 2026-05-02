@@ -1,8 +1,9 @@
-import { defineConfig } from "vitest/config";
-import react, { reactCompilerPreset } from "@vitejs/plugin-react";
-import babel from "@rolldown/plugin-babel";
-import path from "path";
-import { tanstackRouter } from "@tanstack/router-plugin/vite";
+import { defineConfig } from "vitest/config"
+import react, { reactCompilerPreset } from "@vitejs/plugin-react"
+import babel from "@rolldown/plugin-babel"
+import path from "path"
+import { tanstackRouter } from "@tanstack/router-plugin/vite"
+import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
   plugins: [
@@ -11,6 +12,7 @@ export default defineConfig({
       generatedRouteTree: "./src/routeTree.gen.ts",
     }),
     react(),
+    tailwindcss(),
     babel({ presets: [reactCompilerPreset()] }),
   ],
   resolve: {
@@ -23,4 +25,4 @@ export default defineConfig({
     globals: true,
     setupFiles: "./src/test/setup.ts",
   },
-});
+})

@@ -1,0 +1,25 @@
+{
+  "label": {
+    "contact": "Contato",
+    "projects": "Ver Projejos",
+    "contact-me": "Fale Comigo"
+  },
+  "aria-labels": {
+    "switcher-description": "Seletor de idioma do site",
+    "site-header": "Cabeçalho do site",
+    "logo-alt": "Logo Adriano Ribeiro",
+    "main-navigation": "Navegação principal"
+  },
+  "header": {
+    "menu": {
+      "about": "Sobre",
+      "technologies": "Tecnologias",
+      "projects": "Projetos"
+    }
+  },
+  "hero": {
+    "title": "Front-End Developer · React",
+    "subtitle": "Estudando, construindo e refatorando.",
+    "content": "Transformando ideias em aplicações reais, criando interfaces que funcionam e código que faz sentido."
+  }
+}
