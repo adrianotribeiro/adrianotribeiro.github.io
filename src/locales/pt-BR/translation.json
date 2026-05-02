@@ -5,10 +5,12 @@
     "contact-me": "Fale Comigo"
   },
   "aria-labels": {
-    "switcher-description": "Seletor de idioma do site",
+    "hero-section": "Apresentação inicial e resumo profissional",
     "site-header": "Cabeçalho do site",
+    "switcher-description": "Seletor de idioma do site",
     "logo-alt": "Logo Adriano Ribeiro",
-    "main-navigation": "Navegação principal"
+    "main-navigation": "Navegação principal",
+    "contact-link": "Link para acessar área de contato"
   },
   "header": {
     "menu": {
@@ -21,5 +23,16 @@
     "title": "Front-End Developer · React",
     "subtitle": "Estudando, construindo e refatorando.",
     "content": "Transformando ideias em aplicações reais, criando interfaces que funcionam e código que faz sentido."
+  },
+  "about": {
+    "about-title": "Sobre Mim",
+    "perfil": "Perfil Profissional",
+    "about-me": "Desenvolvedor Front-End focado em criar interfaces semânticas, responsivas e performáticas com React, Next.js e TypeScript. Tenho forte atenção aos detalhes na tradução de wireframes e protótipos (Figma) para código de alta qualidade. Utilizo AI Pair Programming como ferramenta de estudo contínuo para acelerar minha evolução e entregar resultados faster, sempre buscando o equilíbrio entre funcionalidade, performance e experiência do usuário.",
+    "trajectory-title": "Trajetória de Carreira",
+    "trajectory-nissian-data": "06/2021 - Atual",
+    "trajectory-nissian-title": "Desenvolvedor Web na Nissian Softwares",
+    "trajectory-dino-title": "Desenvolvedor Frontend na DinoCode Technologies",
+    "trajectory-narvik-data": "06/2020 – Atual",
+    "trajecotry-narvik-title": "Desenvolvedor Frontend na Narvik Softwares"
   }
 }

@@ -5,10 +5,12 @@
     "contact-me": "Contact Me"
   },
   "aria-labels": {
+    "hero-section": "Initial presentation and professional summary",
     "switcher-description": "Website language selector",
     "site-header": "Site header",
     "logo-alt": "Adriano Ribeiro Logo",
-    "main-navigation": "Main navigation"
+    "main-navigation": "Main navigation",
+    "contact-link": "Link to access contact area"
   },
   "header": {
     "menu": {
@@ -21,5 +23,16 @@
     "title": "Front-End Developer · React",
     "subtitle": "Studying, building, and refactoring.",
     "content": "Transforming ideas into real-world applications, creating functional interfaces and meaningful code."
+  },
+  "about": {
+    "about-title": "About Me",
+    "perfil": "Professional Profile",
+    "about-me": "I'm a frontend developer focused on creating semantic, responsive, and performant interfaces with React, Next.js, and TypeScript. I have a strong attention to detail in translating wireframes and prototypes (Figma) into high-quality code. I use AI Pair Programming as a continuous learning tool to accelerate my growth and deliver faster results, always seeking the balance between functionality, performance, and user experience.",
+    "trajectory-title": "Career Trajectory",
+    "trajectory-nissian-data": "06/2021 - Present",
+    "trajectory-nissian-title": "Web Developer at Nissian Softwares",
+    "trajectory-dino-title": "Frontend Developer at DinoCode Technologies",
+    "trajectory-narvik-data": "06/2020 – Present",
+    "trajecotry-narvik-title": "Frontend Developer at Narvik Softwares"
   }
 }
