@@ -1,258 +1,58 @@
-# Nissian Software — Frontend Boilerplate
+# Adriano Ribeiro | Portfólio
 
-Boilerplate de frontend opinado, pronto para produção, construído com as melhores ferramentas do ecossistema React moderno.
+Portfólio pessoal construído com React, TypeScript e Vite.
 
----
+Acesse o site aqui
+Tech Stack
 
-## Stack
+    Frontend: React 19, TypeScript
+    Estilização: Tailwind CSS 4, Shadcn/UI
+    Roteamento: TanStack Router
+    Formulários: TanStack Form + Formspree
+    Internacionalização: i18next
+    Qualidade: ESLint, Prettier, Husky, Vitest
 
-| Ferramenta                                                              | Descrição                                              | Docs                                                       |
-| ----------------------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
-| [Vite](https://vitejs.dev)                                              | Build tool e dev server ultrarrápido                   | https://vitejs.dev                                         |
-| [React 19](https://react.dev)                                           | Biblioteca de UI                                       | https://react.dev                                          |
-| [TypeScript](https://www.typescriptlang.org)                            | Tipagem estática                                       | https://www.typescriptlang.org                             |
-| [Shadcn/ui](https://ui.shadcn.com)                                      | Componentes acessíveis e customizáveis                 | https://ui.shadcn.com                                      |
-| [TanStack Router](https://tanstack.com/router)                          | Roteamento type-safe                                   | https://tanstack.com/router                                |
-| [TanStack Form](https://tanstack.com/form)                              | Gerenciamento de formulários                           | https://tanstack.com/form                                  |
-| [Zod](https://zod.dev)                                                  | Validação de schemas                                   | https://zod.dev                                            |
-| [Zustand](https://zustand-demo.pmnd.rs)                                 | Gerenciamento de estado global                         | https://zustand-demo.pmnd.rs                               |
-| [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) | Cliente HTTP nativo do browser                         | https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API |
-| [i18next](https://www.i18next.com)                                      | Internacionalização (i18n)                             | https://www.i18next.com                                    |
-| [Vitest](https://vitest.dev)                                            | Framework de testes unitários                          | https://vitest.dev                                         |
-| [Testing Library](https://testing-library.com)                          | Utilitários de teste para React                        | https://testing-library.com                                |
-| [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)        | Tipografia principal                                   | https://fontsource.org/fonts/space-grotesk                 |
-| [Prettier](https://prettier.io)                                         | Formatação de código consistente                       | https://prettier.io                                        |
-| [Husky](https://typicode.github.io/husky)                               | Git hooks para rodar lint/format antes de commits      | https://typicode.github.io/husky                           |
-| [lint-staged](https://github.com/lint-staged/lint-staged)               | Roda linters apenas nos arquivos staged                | https://github.com/lint-staged/lint-staged                 |
-| [Knip](https://knip.dev)                                                | Remove dependências, exports e arquivos não utilizados | https://knip.dev                                           |
+    Começando
 
----
+Pré-requisitos
 
-## Pré-requisitos
+    Node.js (v22+)
+    pnpm (v9+)
 
-- **Node.js** `v22+` (o projeto inclui `.node-version` para uso com `fnm` ou `nvm`)
-- **pnpm** `v9+`
+Instalação
 
-### Instalando o fnm (recomendado)
+Clone o repositóriogit clone https://github.com/adrianotribeiro/adrianotribeiro.github.io.git# Entre na pastacd adrianotribeiro.github.io# Instale as dependências pnpm install
 
-```bash
-curl -fsSL https://fnm.vercel.app/install | bash
-```
+ariáveis de Ambiente
 
-Adicione ao seu `~/.zshrc` ou `~/.bashrc` para troca automática de versão ao entrar na pasta:
+Crie um arquivo .env na raiz baseado no .env.example:
 
-```bash
-eval "$(fnm env --use-on-cd --shell zsh)"
-```
+VITE_FORMSPREE_FORM_ID=seu_id_aqui
 
----
+Desenvolvimento
 
-## Instalação
+# Inicia o servidor de desenvolvimento
 
-```bash
-# Clone o repositório
-git clone https://github.com/nissian-software/nissian-software-boilerplate.git
-cd nissian-software-boilerplate
+pnpm dev
 
-# A versão correta do Node será usada automaticamente via .node-version
-# Instale as dependências
-pnpm install
+# Build de produção
 
-# Configure as variáveis de ambiente
-cp .env.example .env
-```
+pnpm build
 
----
+# Preview do build
 
-## Scripts
+pnpm preview
 
-```bash
-pnpm dev           # Inicia o servidor de desenvolvimento
-pnpm build         # Gera o build de produção
-pnpm preview       # Visualiza o build de produção localmente
-pnpm test          # Roda os testes em modo watch
-pnpm test:ui       # Roda os testes com interface visual
-pnpm test:coverage # Gera relatório de cobertura
-pnpm lint          # Roda o ESLint
-pnpm format        # Formata todos os arquivos com Prettier
-pnpm knip          # Detecta código morto e dependências não utilizadas
-```
+Estrutura
 
----
-
-## Variáveis de Ambiente
-
-Copie o `.env.example` e preencha os valores:
-
-```env
-VITE_API_URL=         # URL base da API
-VITE_API_TIMEOUT=     # Timeout das requisições em ms (padrão: 10000)
-```
-
----
-
-## Estrutura de Pastas
-
-```
 src/
-├── components/
-│   └── ui/          # Componentes do Shadcn/ui
-├── lib/
-│   ├── http.ts      # Wrapper da Fetch API (get, post, put, patch, delete)
-│   ├── i18n.ts      # Configuração do i18next
-│   └── utils.ts     # Utilitários (cn do Shadcn)
-├── routes/          # Rotas do TanStack Router
-├── store/           # Stores do Zustand
-├── test/
-│   └── setup.ts     # Setup global do Vitest + Testing Library
-├── index.css        # Tema global (variáveis Shadcn/ui)
-├── main.tsx         # Ponto de entrada da aplicação
-└── vite-env.d.ts    # Tipos do Vite
-```
+├── components/ # Componentes React (Header, Hero, About, etc.)
+├── hooks/ # Hooks customizados
+├── lib/ # Utilitários e configuração do i18n
+├── routes/ # Rotas do TanStack Router
+├── index.css # Estilos globais
+└── main.tsx # Ponto de entrada
 
----
+Licença
 
-## Tema — Chaotic Goblin Tech
-
-O projeto usa um tema customizado chamado **Chaotic Goblin Tech** configurado via variáveis CSS do Shadcn/ui.
-
-| Token           | Cor          | Hex       |
-| --------------- | ------------ | --------- |
-| `--background`  | Void Night   | `#1a1a2e` |
-| `--card`        | Cavern Blue  | `#16213e` |
-| `--primary`     | Slime Green  | `#8BF046` |
-| `--destructive` | Forge Orange | `#FF9A3C` |
-| `--accent`      | Potion Mist  | `#C8F0A0` |
-| `--foreground`  | Parchment    | `#E8E8E8` |
-
-Para adicionar novos componentes Shadcn/ui:
-
-```bash
-pnpm dlx shadcn@latest add <componente>
-```
-
----
-
-## Testes
-
-Os testes usam **Vitest** + **React Testing Library**. Para componentes isolados:
-
-```tsx
-import { render, screen } from "@testing-library/react"
-import { Button } from "@/components/ui/button"
-
-test("renderiza o botão", () => {
-  render(<Button>Click me</Button>)
-  expect(screen.getByText("Click me")).toBeInTheDocument()
-})
-```
-
----
-
-## Internacionalização
-
-As traduções ficam em `src/lib/i18n.ts`. Para usar nos componentes:
-
-```tsx
-import { useTranslation } from "react-i18next"
-
-function Home() {
-  const { t } = useTranslation()
-  return <h1>{t("welcome")}</h1>
-}
-```
-
----
-
-## Estado Global
-
-As stores do Zustand ficam em `src/store/`. Exemplo de uso:
-
-```tsx
-import { useAppStore } from "@/store/app.store"
-
-function Counter() {
-  const { count, increment } = useAppStore()
-  return <button onClick={increment}>{count}</button>
-}
-```
-
----
-
-## Requisições HTTP
-
-O cliente HTTP fica em `src/lib/http.ts`. É um wrapper leve sobre a **Fetch API nativa** do browser — sem dependências externas — com suporte a tipagem genérica, query params, timeout via `AbortController`, interceptors de request/response e erro tipado via `HttpError`.
-
-O token JWT é injetado automaticamente em todas as requisições a partir do `localStorage`, e respostas `401` redirecionam para `/login` sem nenhuma configuração extra.
-
-```ts
-import { http, HttpError } from "@/lib/http"
-
-// GET com query params tipados
-const users = await http.get<User[]>("/users", {
-  params: { page: 1, limit: 20 },
-})
-
-// POST
-const novoUser = await http.post<User>("/users", { name: "João" })
-
-// PUT / PATCH / DELETE
-await http.put("/users/123", { name: "João Atualizado" })
-await http.patch("/users/123", { active: false })
-await http.delete("/users/123")
-
-// Tratamento de erro tipado
-try {
-  await http.delete("/users/123")
-} catch (e) {
-  if (e instanceof HttpError) {
-    console.log(e.status) // 404, 500, etc.
-    console.log(e.data) // corpo da resposta de erro
-  }
-}
-```
-
-Para adicionar interceptors customizados (ex: logging, toast de erro global):
-
-```ts
-import { addRequestInterceptor, addResponseInterceptor } from "@/lib/http"
-
-addResponseInterceptor(async (response) => {
-  if (response.status >= 500) toast.error("Erro no servidor")
-  return response
-})
-```
-
----
-
-## Qualidade de Código
-
-### Prettier
-
-Formata o código automaticamente. Para formatar todos os arquivos:
-
-```bash
-pnpm format
-```
-
-A configuração fica em `.prettierrc`. O plugin `prettier-plugin-tailwindcss` ordena as classes do Tailwind automaticamente.
-
-### Husky + lint-staged
-
-A cada `git commit`, o Husky roda automaticamente o ESLint e o Prettier apenas nos arquivos staged. Nenhuma configuração extra necessária — funciona após o `pnpm install`.
-
-### Knip
-
-Detecta e reporta arquivos, exports e dependências não utilizados:
-
-```bash
-pnpm knip
-```
-
-A configuração fica em `knip.json`.
-
----
-
-## Licença
-
-MIT
+Este projeto está sob a licença MIT.
