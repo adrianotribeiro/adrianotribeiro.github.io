@@ -64,6 +64,7 @@ pnpm preview
 
 ## Estrutura
 
+```bash
 src/
 ├── components/ # Componentes React (Header, Hero, About, etc.)
 ├── hooks/ # Hooks customizados
@@ -71,6 +72,7 @@ src/
 ├── routes/ # Rotas do TanStack Router
 ├── index.css # Estilos globais
 └── main.tsx # Ponto de entrada
+```
 
 ## Licença
 
