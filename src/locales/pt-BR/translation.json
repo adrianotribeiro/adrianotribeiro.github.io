@@ -34,5 +34,32 @@
     "trajectory-dino-title": "Desenvolvedor Frontend na DinoCode Technologies",
     "trajectory-narvik-data": "06/2020 – Atual",
     "trajecotry-narvik-title": "Desenvolvedor Frontend na Narvik Softwares"
+  },
+  "technologies": {
+    "technologies-title": "Tecnologias"
+  },
+  "projects": {
+    "projects-title": "Projetos Recentes",
+    "drh-content": "A DRH é uma empresa que atua na área de prestação de serviços em recursos humanos",
+    "theUtilityHubContent": "The Utility Hub é uma empresa que ajuda as pessoas com o processo de mudar de casa ou negócio.",
+    "klikVapes": "Klik Vapes é uma empresa que vende vapes.",
+    "webSite": "Site",
+    "repository": "Repositório"
+  },
+  "contact": {
+    "contact-title": "Contato",
+    "name": "Nome",
+    "your-name": "Seu nome",
+    "your-mail": "seu@email.com",
+    "message": "Mensagem",
+    "how-can-help": "Como posso ajudar?",
+    "to-send": "Enviar",
+    "email-sent-message": "Email enviado com sucesso!",
+    "unknown-message": "Erro desconhecido",
+    "req-message": "Erro na requisição",
+    "error-sending-mail-message": "Erro ao enviar email. Verifique sua conexão e tente novamente.",
+    "lets-talk": "Vamos Conversar!",
+    "lets-talk-content": "Estou sempre aberto a novas oportunidades, parcerias e projetos interessantes. Sinta-se à vontade para entrar em contato através do formulário ou diretamente pelos canais abaixo.",
+    "all-rights": "todos os direitos reservados."
   }
 }
