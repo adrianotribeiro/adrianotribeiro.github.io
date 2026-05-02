@@ -2,48 +2,67 @@
 
 Portfólio pessoal construído com React, TypeScript e Vite.
 
-Acesse o site aqui
-Tech Stack
+🔗 [Acesse o site aqui](https://adrianotribeiro.github.io/)
 
-    Frontend: React 19, TypeScript
-    Estilização: Tailwind CSS 4, Shadcn/UI
-    Roteamento: TanStack Router
-    Formulários: TanStack Form + Formspree
-    Internacionalização: i18next
-    Qualidade: ESLint, Prettier, Husky, Vitest
+---
 
-    Começando
+## Tech Stack
 
-Pré-requisitos
+| Categoria               | Tecnologias                     |
+| ----------------------- | ------------------------------- |
+| **Frontend**            | React 19, TypeScript            |
+| **Estilização**         | Tailwind CSS 4, Shadcn/UI       |
+| **Roteamento**          | TanStack Router                 |
+| **Formulários**         | TanStack Form + Formspree       |
+| **Internacionalização** | i18next                         |
+| **Qualidade**           | ESLint, Prettier, Husky, Vitest |
 
-    Node.js (v22+)
-    pnpm (v9+)
+---
 
-Instalação
+## Começando
 
-Clone o repositóriogit clone https://github.com/adrianotribeiro/adrianotribeiro.github.io.git# Entre na pastacd adrianotribeiro.github.io# Instale as dependências pnpm install
+### Pré-requisitos
 
-ariáveis de Ambiente
+- Node.js (v22+)
+- pnpm (v9+)
 
-Crie um arquivo .env na raiz baseado no .env.example:
+### Instalação
 
+```bash
+# Clone o repositório
+git clone https://github.com/adrianotribeiro/adrianotribeiro.github.io.git
+
+# Entre na pasta
+cd adrianotribeiro.github.io
+
+# Instale as dependências
+pnpm install
+```
+
+### Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz baseado no `.env.example`:
+
+```env
 VITE_FORMSPREE_FORM_ID=seu_id_aqui
+```
 
-Desenvolvimento
+### Desenvolvimento
 
+```bash
 # Inicia o servidor de desenvolvimento
-
 pnpm dev
 
 # Build de produção
-
 pnpm build
 
 # Preview do build
-
 pnpm preview
+```
 
-Estrutura
+---
+
+## Estrutura
 
 src/
 ├── components/ # Componentes React (Header, Hero, About, etc.)
@@ -53,6 +72,6 @@ src/
 ├── index.css # Estilos globais
 └── main.tsx # Ponto de entrada
 
-Licença
+## Licença
 
-Este projeto está sob a licença MIT.
+Este projeto está sob a licença [MIT](./LICENSE).
