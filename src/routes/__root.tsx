@@ -14,7 +14,7 @@ export const Route = createRootRoute({
         }}
       >
         <Outlet />
-        <TanStackRouterDevtools />
+        <TanStackRouterDevtools initialIsOpen={false} />
       </section>
       <Footer />
     </main>
